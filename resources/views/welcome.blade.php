@@ -6,14 +6,14 @@
     <title>Bienvenue - T.T.G Network</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-600 text-white min-h-screen flex flex-col">
+<body class="bg-gradient-to-r from-sky-500 to-cyan-500 text-white min-h-screen flex flex-col">
 
     <!-- Header -->
     <header class="w-full max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row md:justify-between md:items-center">
-        <h1 class="text-2xl font-bold">T.T.G Network</h1>
+        <h1 class="text-2xl font-bold tracking-wide">T.T.G Network</h1>
         <nav class="mt-4 md:mt-0 space-x-4">
-            <a href="{{ route('register') }}" class="text-white hover:text-yellow-300 font-semibold">Créer un compte</a>
-            <a href="{{ route('login') }}" class="text-white hover:text-yellow-300 font-semibold">Se connecter</a>
+            <a href="{{ route('register') }}" class="text-white hover:text-yellow-300 font-medium transition">Créer un compte</a>
+            <a href="{{ route('login') }}" class="text-white hover:text-yellow-300 font-medium transition">Se connecter</a>
         </nav>
     </header>
 
@@ -22,27 +22,27 @@
         <h2 class="text-4xl font-extrabold drop-shadow-md animate-fade-in">
             Bienvenue sur <span class="text-yellow-300">T.T.G Network</span>
         </h2>
-        <p class="max-w-xl text-lg text-gray-200 drop-shadow-sm animate-fade-in delay-100">
+        <p class="max-w-xl text-lg text-gray-100 drop-shadow-sm animate-fade-in delay-100">
             La plateforme scolaire intelligente qui facilite la gestion des étudiants, cours, notes, enseignants et plus encore.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 animate-fade-in delay-200">
             <a href="{{ route('register') }}"
-               class="px-6 py-3 bg-white text-indigo-800 font-semibold rounded-xl shadow hover:bg-gray-100 transition">
+               class="px-6 py-3 bg-white text-sky-700 font-semibold rounded-xl shadow hover:bg-gray-100 transition">
                 Créer un compte
             </a>
             <a href="{{ route('login') }}"
-               class="px-6 py-3 bg-white text-indigo-800 font-semibold rounded-xl shadow hover:bg-gray-100 transition">
+               class="px-6 py-3 bg-white text-sky-700 font-semibold rounded-xl shadow hover:bg-gray-100 transition">
                 Se connecter
             </a>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-indigo-900 py-4 text-center text-sm">
+    <footer class="bg-sky-800 py-4 text-center text-sm text-white/80">
         © {{ date('Y') }} <strong>T.T.G Network</strong>. Tous droits réservés.
     </footer>
 
-    <!-- Simple fade-in animation -->
+    <!-- Animation CSS -->
     <style>
         .animate-fade-in {
             opacity: 0;
